@@ -77,7 +77,7 @@
       <option value="award">Award</option>
       <option value="fellowship">Fellowship</option>
       <option value="grant">Grant</option>
-      <option value="internship">Internship</option>
+      <option value="competition">Competition</option>
     </select>
     <select id="eligibilityFilter">
       <option value="">All Levels</option>
@@ -90,8 +90,15 @@
   <div class="opportunity-list" id="opportunityList"></div>
 
   <script>
-    // Sample dataset
+    // Sample GW opportunities dataset
     const opportunities = [
+      {
+        title: "Knapp Fellowship",
+        type: "fellowship",
+        eligibility: "undergraduate",
+        deadline: "2025-11-10",
+        link: "https://www.gwu.edu/knapp-fellowship"
+      },
       {
         title: "GW OSPO Open Source Project Award",
         type: "award",
@@ -100,32 +107,25 @@
         link: "https://ospo.gwu.edu/"
       },
       {
-        title: "Elizabeth J. Somers Women’s Leadership Fellowship",
-        type: "fellowship",
-        eligibility: "undergraduate",
-        deadline: "2025-12-01",
-        link: "https://somers.gwu.edu/"
-      },
-      {
-        title: "GW Research Grant for Undergraduates",
-        type: "grant",
-        eligibility: "undergraduate",
-        deadline: "2025-11-15",
-        link: "https://ugresearch.gwu.edu/"
-      },
-      {
-        title: "GW International Internship Program",
-        type: "internship",
-        eligibility: "all",
-        deadline: "2025-11-30",
-        link: "https://studyabroad.gwu.edu/"
-      },
-      {
-        title: "Mercedes-Benz beVisioneers Fellowship",
-        type: "fellowship",
+        title: "National Venture Capital Competition (NVC)",
+        type: "competition",
         eligibility: "graduate",
-        deadline: "2025-11-10",
-        link: "https://environment.gwu.edu/"
+        deadline: "2025-12-01",
+        link: "https://nvc.gwu.edu/"
+      },
+      {
+        title: "Pitch George",
+        type: "competition",
+        eligibility: "undergraduate",
+        deadline: "2025-11-20",
+        link: "https://entrepreneurship.gwu.edu/pitch-george"
+      },
+      {
+        title: "Women's Leadership Program (WLP)",
+        type: "program",
+        eligibility: "undergraduate",
+        deadline: "2025-12-15",
+        link: "https://somers.gwu.edu/wlp"
       }
     ];
 
